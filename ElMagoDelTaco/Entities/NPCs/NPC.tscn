@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/NPCs/NPC.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Story System/StoryTrigger.tscn" type="PackedScene" id=2]
+
+[node name="NPC" type="KinematicBody2D" groups=[
+"NPC",
+]]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+
+[node name="TalkArea" type="Area2D" parent="."]
+
+[node name="TalkAreaCollider" type="CollisionShape2D" parent="TalkArea"]
+
+[node name="TalkCooldownTimer" type="Timer" parent="."]
+
+[node name="StoryTrigger" parent="." instance=ExtResource( 2 )]
+
+[connection signal="body_entered" from="TalkArea" to="." method="_on_TalkArea_body_entered"]
+[connection signal="body_exited" from="TalkArea" to="." method="_on_TalkArea_body_exited"]
+[connection signal="timeout" from="TalkCooldownTimer" to="." method="_on_TalkCooldownTimer_timeout"]

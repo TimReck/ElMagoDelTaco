@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+"Burrito": "Beginning"
+}
+npcsPositions = {
+"Burrito": Vector2( 1220, 445 )
+}
+teleporterUseable = {
+}
+conditions = [ 3 ]
+storyTitle = "The Beginning"
+storyDescription = "Gehe in die Stadt Pueblo und rede mit dem Paten B.Urrito! Du erkennst ihn an seinem kahlen Kopf und seinem Bierglas."

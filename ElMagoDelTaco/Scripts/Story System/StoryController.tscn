@@ -1,0 +1,15 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_001.tres" type="Resource" id=1]
+[ext_resource path="res://Scripts/Story System/StoryController.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_003.tres" type="Resource" id=3]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_002.tres" type="Resource" id=4]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_004.tres" type="Resource" id=5]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_005.tres" type="Resource" id=6]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_006.tres" type="Resource" id=7]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_007.tres" type="Resource" id=8]
+[ext_resource path="res://Scripts/Story System/Story Blocks/SB_008.tres" type="Resource" id=9]
+
+[node name="StoryController" type="Node"]
+script = ExtResource( 2 )
+story = [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ]

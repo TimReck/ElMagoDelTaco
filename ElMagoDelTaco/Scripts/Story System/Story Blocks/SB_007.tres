@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+"Burrito": "DasFinale"
+}
+npcsPositions = {
+"PatuaPechos": Vector2( 1104, 424 )
+}
+teleporterUseable = {
+}
+conditions = [ 3 ]
+storyTitle = "El esta derrotado!"
+storyDescription = "El Muerto ist besiegt. Gehe zurück ins Dorf und rede mit B.Urrito und bringe das Rezept zurück."

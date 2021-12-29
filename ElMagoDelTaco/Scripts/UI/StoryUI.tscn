@@ -1,0 +1,211 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Scripts/UI/StoryUI.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/UI/Background.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Sounds/NewQuest.wav" type="AudioStream" id=4]
+[ext_resource path="res://Graphics/UI/Button.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/UI/Button_pressed.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=15]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=16]
+default_font = SubResource( 15 )
+Fonts/fonts/Arial = null
+
+[sub_resource type="DynamicFont" id=17]
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=18]
+default_font = SubResource( 17 )
+
+[sub_resource type="DynamicFont" id=19]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=20]
+default_font = SubResource( 19 )
+
+[sub_resource type="DynamicFont" id=21]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 13
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=23]
+default_font = SubResource( 22 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 13
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=9]
+default_font = SubResource( 8 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 15, 15 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 15, 15 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 15, 15 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 15, 15 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 15, 15 )
+
+[node name="StoryUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoryPopupUI" type="Control" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -160.0
+margin_top = 20.0
+margin_right = 160.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoryPopupShowTimer" type="Timer" parent="StoryPopupUI"]
+
+[node name="StoryBlockTitleLabel" type="Label" parent="StoryPopupUI"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -160.0
+margin_right = 160.0
+margin_bottom = 24.0
+theme = SubResource( 16 )
+text = "Story Block Title"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopupFaderTween" type="Tween" parent="StoryPopupUI"]
+
+[node name="StoryInfoUI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="NinePatchRect" parent="StoryInfoUI"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -120.0
+margin_top = -70.0
+margin_right = 120.0
+margin_bottom = 78.0
+theme = SubResource( 20 )
+texture = ExtResource( 2 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StoryInfoUI/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoryBlockTitleLabel" type="Label" parent="StoryInfoUI/Background/VBoxContainer"]
+margin_left = 2.0
+margin_right = 227.0
+margin_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 21 )
+text = "The New Story Block Title"
+align = 1
+valign = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="StoryInfoUI/Background/VBoxContainer"]
+margin_top = 19.0
+margin_right = 230.0
+margin_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StoryInfoUI/Background/VBoxContainer"]
+margin_top = 23.0
+margin_right = 230.0
+margin_bottom = 123.0
+alignment = 1
+
+[node name="StoryDescriptionRichTextLabel" type="RichTextLabel" parent="StoryInfoUI/Background/VBoxContainer/HBoxContainer"]
+margin_left = 15.0
+margin_right = 215.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 200, 100 )
+theme = SubResource( 23 )
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ligula enim, tristique a tortor quis, egestas lacinia nibh. Mauris bibendum pretium dolor eget tristique. Vestibulum aliquet orci quis nunc pulvinar varius. Praesent dictum ligula ut porta vestibulum. Sed euismod ipsum eget neque gravida tempus. Integer tempus sollicitudin aliquet. Nunc interdum mi a urna pharetra, sodales laoreet lacus porttitor. Nullam auctor arcu pellentesque ante eleifend, at rutrum purus dapibus. Ut in mi vel nibh pretium auctor. Ut varius turpis commodo sem dictum, vestibulum ultricies nisl pellentesque. Curabitur hendrerit mi hendrerit libero tincidunt hendrerit. Cras quis libero mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas et ante ultrices, vulputate diam faucibus, aliquam lacus. Fusce pellentesque, justo id vehicula suscipit, lacus neque molestie leo, et fermentum tortor justo quis augue."
+
+[node name="Button" type="Button" parent="StoryInfoUI/Background/VBoxContainer"]
+margin_left = 77.0
+margin_top = 127.0
+margin_right = 152.0
+margin_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 75, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource( 9 )
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 12 )
+custom_styles/disabled = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+text = "Close"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="timeout" from="StoryPopupUI/StoryPopupShowTimer" to="." method="_on_StoryPopupShowTimer_timeout"]
+[connection signal="tween_all_completed" from="StoryPopupUI/PopupFaderTween" to="." method="_on_PopupFaderTween_tween_all_completed"]
+[connection signal="pressed" from="StoryInfoUI/Background/VBoxContainer/Button" to="." method="_on_Button_pressed"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/NewQuest.wav-7a835f0e8f19c744e2b8a8ff5f456d78.sample"
+
+[deps]
+
+source_file="res://Sounds/NewQuest.wav"
+dest_files=[ "res://.import/NewQuest.wav-7a835f0e8f19c744e2b8a8ff5f456d78.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

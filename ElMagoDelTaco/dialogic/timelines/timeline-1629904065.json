@@ -1,0 +1,187 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hallo El Jefe, wir brauchen deine Hilfe!"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uns wurde das geheime Rezept deiner Großmutter für die Weltbeste Tacosoße gestohlen."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh no, no la buena salsa."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Und nur du kannst uns helfen das Rezept zurück zu bekommen."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Sólo yo?"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber bevor du dich auf die gefährliche Reise machen kannst, hier noch ein paar Hinweise."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Viaje peligroso?"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No quiero hacer eso."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Danke das du uns hilfst. Hier nun folgende Hinweise für dich."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dios mío, ¿por qué nadie aquí en México entiende español?"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wenn du Münzen findest, lauf über diese drüber um sie aufzusammeln. "
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mit den Münzen kannst du deine Attacken und Leben verbessern (Drücke dazu die \"u\" Taste)."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Auf deinem Weg wird dir auch die ein oder andere Pinjata begegnen. "
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nutze deine Attacken um diese zu zerstören und Münzen aus diesen zu erhalten (Drücke dazu die Leertaste)"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hast du das alles verstanden?"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No, no entiendo muy bien la parte con las piñatas. ¿Por qué están en todas partes aquí?"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gut, dann können wir ja weiter machen."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Auf deinem Weg werden dir verschiedene Gegner begegnen."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vor diesen musst du dich in acht nehmen, diese werden versuchen dich zu töten."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Están tratando de matarme?"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿No podemos simplemente llamar a la policía?"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber das wirst du schon ohne Probleme hinbekommen."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Geh nun aber erstmal zu La Patua Pechos und rede mit ihr. Sie kann dir bestimmt noch ein paar infos geben."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Du erkennst sie an ihrem Hut und ihrer Waffe die sie immer bei sich trägt."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1629904065.json",
+		"name": "Beginning"
+	}
+}

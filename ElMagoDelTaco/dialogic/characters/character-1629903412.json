@@ -1,0 +1,20 @@
+{
+	"color": "#ffebdd48",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1629903412.json",
+	"mirror_portraits": false,
+	"name": "El Jefe",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 320,
+	"offset_y": -70,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Graphics/Dialog/El_Jefe/El_Jefe_Normal.png"
+		}
+	],
+	"scale": 200
+}

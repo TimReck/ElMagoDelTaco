@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Graphics/World/buildings.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 92.3994, 39.4924 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 44.379, 10 )
+
+[node name="Building_Big_Fancy" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.95, 0.95 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 20.5271, 183.634, 212.958, 156.567 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.509673, 14.6982 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 0.840912, 59.2832 )
+shape = SubResource( 2 )

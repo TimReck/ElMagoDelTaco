@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Other/Teleporter/Teleporter.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Other/Teleporter/TeleportPoint.tscn" type="PackedScene" id=2]
+
+[node name="Teleporter" type="Position2D"]
+script = ExtResource( 1 )
+
+[node name="TeleportPointA" parent="." instance=ExtResource( 2 )]
+position = Vector2( -29, 0 )
+
+[node name="TeleportPointB" parent="." instance=ExtResource( 2 )]
+position = Vector2( 45, 0 )
+
+[node name="TeleportCooldownTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="TeleportPointA" to="." method="_on_TeleportPointA_body_entered"]
+[connection signal="body_entered" from="TeleportPointB" to="." method="_on_TeleportPointB_body_entered"]
+[connection signal="timeout" from="TeleportCooldownTimer" to="." method="_on_TeleportCooldownTimer_timeout"]

@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "El Jefe! Du hast mich gerettet."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Qué estás haciendo aquí sola, mi linda?"
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es waren einfach zu viele, ohne dich hätte ich das nicht geschafft."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich habe mich aber an meinem Bein verletzt. Gehe bitte ins Dorf zurück und sag B.urrito bescheid."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "B.urrito? Mi buen amigo!"
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bitte beeil dich!"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Dónde he terminado?"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1632918943.json",
+		"name": "PatuaRettung"
+	}
+}

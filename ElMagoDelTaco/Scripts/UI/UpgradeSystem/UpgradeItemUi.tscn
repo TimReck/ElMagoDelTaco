@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/UI/Themes/FontTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Graphics/UI/HeartUIFull.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/UpgradeSystem/UpgradeItemUi.gd" type="Script" id=3]
+[ext_resource path="res://Graphics/Effects/CoinIcon.png" type="Texture" id=4]
+
+[node name="UpgradeItem" type="HBoxContainer"]
+margin_top = 19.0
+margin_right = 181.0
+margin_bottom = 39.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IconRect" type="TextureRect" parent="."]
+margin_right = 16.0
+margin_bottom = 20.0
+texture = ExtResource( 2 )
+
+[node name="NameLabel" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 2.0
+margin_right = 137.0
+margin_bottom = 17.0
+theme = ExtResource( 1 )
+text = "Upgrade Name:"
+
+[node name="ValueLabel" type="Label" parent="."]
+margin_left = 141.0
+margin_top = 2.0
+margin_right = 168.0
+margin_bottom = 17.0
+theme = ExtResource( 1 )
+text = "2/6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpgradeButton" type="Button" parent="."]
+margin_left = 172.0
+margin_right = 237.0
+margin_bottom = 20.0
+text = "Upgrade"
+
+[node name="CostValueLabel" type="Label" parent="."]
+margin_left = 241.0
+margin_top = 2.0
+margin_right = 259.0
+margin_bottom = 17.0
+theme = ExtResource( 1 )
+text = "99"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoinTextureRect" type="TextureRect" parent="."]
+margin_left = 263.0
+margin_right = 279.0
+margin_bottom = 20.0
+texture = ExtResource( 4 )
+
+[connection signal="pressed" from="UpgradeButton" to="." method="_on_UpgradeButton_pressed"]

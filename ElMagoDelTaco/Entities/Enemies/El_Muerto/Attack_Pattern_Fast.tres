@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Enemies/El_Muerto/ProjectileSpawnPattern.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Enemies/El_Muerto/El_Muerto_Projectile.tscn" type="PackedScene" id=2]
+
+[resource]
+script = ExtResource( 1 )
+rotaterSpeed = 50.0
+shootingInterval = 0.25
+projectileSpawnerCount = 3
+radius = 15.0
+projectileSpeed = 200.0
+projectileDamage = 2
+projectile = ExtResource( 2 )

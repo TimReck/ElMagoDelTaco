@@ -1,0 +1,114 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Graphics/Entities/Enemies/Cactus.png" type="Texture" id=1]
+[ext_resource path="res://Entities/Enemies/Cactus/Cactus.gd" type="Script" id=2]
+[ext_resource path="res://Entities/Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Entities/Overlap/Hurtbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entities/Stats.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Graphics/Shadows/MediumShadow.png" type="Texture" id=6]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 15.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 1.0
+} ]
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id=11]
+radius = 128.25
+
+[sub_resource type="CapsuleShape2D" id=12]
+height = 12.0
+
+[node name="Cactus" type="StaticBody2D"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 2 )
+attackCooldownTime = 2.0
+attackSpeed = 150.0
+
+[node name="ShadowSprite" type="Sprite" parent="."]
+texture = ExtResource( 6 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1, -15 )
+frames = SubResource( 9 )
+animation = "Idle"
+frame = 2
+playing = true
+
+[node name="WorldCollider" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -7 )
+shape = SubResource( 10 )
+
+[node name="PlayerDetectionZone" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+shape = SubResource( 11 )
+
+[node name="Hurtbox" parent="." instance=ExtResource( 4 )]
+collision_layer = 8
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 0, -16 )
+shape = SubResource( 12 )
+
+[node name="Stats" parent="." instance=ExtResource( 5 )]
+max_health = 10
+health = 6
+
+[node name="ChaseTimer" type="Timer" parent="."]
+
+[node name="AttackCooldown" type="Timer" parent="."]
+
+[connection signal="player_detected" from="PlayerDetectionZone" to="." method="_on_PlayerDetectionZone_player_detected"]
+[connection signal="player_lost" from="PlayerDetectionZone" to="." method="_on_PlayerDetectionZone_player_lost"]
+[connection signal="hurtbox_got_hit" from="Hurtbox" to="." method="_on_Hurtbox_hurtbox_got_hit"]
+[connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
+[connection signal="timeout" from="ChaseTimer" to="." method="_on_ChaseTimer_timeout"]
+[connection signal="timeout" from="AttackCooldown" to="." method="_on_AttackCooldown_timeout"]
+
+[editable path="PlayerDetectionZone"]
+[editable path="Hurtbox"]

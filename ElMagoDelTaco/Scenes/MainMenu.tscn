@@ -1,0 +1,107 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/UI/ElMagoDelTacoLogo.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/Themes/FontTheme.tres" type="Theme" id=3]
+[ext_resource path="res://Graphics/Menu/BackgroundMenu.jpg" type="Texture" id=4]
+[ext_resource path="res://Scenes/MusicController.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Effects/Sound_Effects/BackgroundMusicMainMenu.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Fonts/VCR_OSD_MONO_1.001.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = SubResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.00417137
+anchor_right = 0.00417137
+anchor_bottom = 1.0
+margin_left = -814.281
+margin_top = -598.684
+margin_right = 585.719
+margin_bottom = 96.3162
+texture = ExtResource( 4 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -90.0
+margin_right = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogoTextureRect" type="TextureRect" parent="VBoxContainer"]
+margin_right = 180.0
+margin_bottom = 45.0
+texture = ExtResource( 2 )
+
+[node name="newGame" type="Button" parent="VBoxContainer"]
+margin_top = 49.0
+margin_right = 180.0
+margin_bottom = 70.0
+theme = ExtResource( 3 )
+text = "Neues Spiel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resumeGame" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 74.0
+margin_right = 180.0
+margin_bottom = 95.0
+theme = ExtResource( 3 )
+text = "Spiel fortsetzen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quitGame" type="Button" parent="VBoxContainer"]
+margin_top = 74.0
+margin_right = 180.0
+margin_bottom = 95.0
+theme = ExtResource( 3 )
+text = "Beenden"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -50.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Demo Version 0.1
+Spiel von Gruppe Leon Kennedy - HTW Saar
+
+Nathanael Mangold, Tim Recktenwald, Sami Machaoui,
+Johannes Schardt, Silas Scholl"
+fit_content_height = true
+override_selected_font_color = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicController" parent="." instance=ExtResource( 5 )]
+music_Scene = ExtResource( 6 )
+
+[connection signal="pressed" from="VBoxContainer/newGame" to="." method="_on_newGame_pressed"]
+[connection signal="pressed" from="VBoxContainer/resumeGame" to="." method="_on_resumeGame_pressed"]
+[connection signal="pressed" from="VBoxContainer/quitGame" to="." method="_on_quitGame_pressed"]

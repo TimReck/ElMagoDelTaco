@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+"PatuaPechos": "PatuaRettung"
+}
+npcsPositions = {
+"PatuaPechos": Vector2( -408, 1472 )
+}
+teleporterUseable = {
+"TeleporterDesert": "TeleporterDesert"
+}
+conditions = [ 4 ]
+storyTitle = "In die Wüste"
+storyDescription = "Gehe in die Wüste und suche nach Patua Pechos. Die Wüste befindet sich östlich vom Dorf."

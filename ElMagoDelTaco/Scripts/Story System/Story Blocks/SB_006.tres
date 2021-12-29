@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+}
+npcsPositions = {
+}
+teleporterUseable = {
+"TeleporterElMuerto": "TeleporterElMuerto"
+}
+conditions = [ 5 ]
+storyTitle = "El Muerto"
+storyDescription = "Gehe in die Wüste und beschaffe das Rezept!"

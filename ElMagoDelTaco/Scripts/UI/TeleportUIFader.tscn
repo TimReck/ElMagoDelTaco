@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/UI/TeleportUIFader.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/UI/Teleporting/Teleport_01.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/UI/Teleporting/Teleport_02.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/UI/Teleporting/Teleport_04.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/UI/Teleporting/Teleport_05.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/UI/Teleporting/Teleport_03.png" type="Texture" id=6]
+
+[sub_resource type="AnimatedTexture" id=1]
+frames = 8
+pause = true
+fps = 10.0
+frame_0/texture = ExtResource( 2 )
+frame_1/texture = ExtResource( 3 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 6 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 4 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 5 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 4 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 6 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 3 )
+frame_7/delay_sec = 0.0
+
+[node name="TeleportUIFader" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FaderTween" type="Tween" parent="."]
+
+[node name="TeleportingTexture" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = SubResource( 1 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TeleportAnimationTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="tween_all_completed" from="FaderTween" to="." method="_on_FaderTween_tween_all_completed"]
+[connection signal="timeout" from="TeleportAnimationTimer" to="." method="_on_TeleportAnimationTimer_timeout"]

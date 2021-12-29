@@ -1,0 +1,20 @@
+{
+	"color": "#ff3b7ff4",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1629990514.json",
+	"mirror_portraits": false,
+	"name": "La Patua Pechos",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 320,
+	"offset_y": -70,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Graphics/Dialog/Patua_Pechos/Patua_Pechos_normal.png"
+		}
+	],
+	"scale": 200
+}

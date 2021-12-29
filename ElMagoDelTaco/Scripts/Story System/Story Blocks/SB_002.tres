@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+"PatuaPechos": "PatuaPechos"
+}
+npcsPositions = {
+"PatuaPechos": Vector2( 1592, 376 )
+}
+teleporterUseable = {
+}
+conditions = [ 4 ]
+storyTitle = "Patua Pechos"
+storyDescription = "Suche in der Stadt Patua und rede mit ihr wie es dir B.Urrito gesagt hatte. Du erkennst sie an Ihrem weißen Hut und ihrer Waffe, die sie stehts bei sich trägt"

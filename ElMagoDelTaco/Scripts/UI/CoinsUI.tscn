@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Graphics/Effects/CoinIcon.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/UI/CoinsUI.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/UI/Themes/FontTheme.tres" type="Theme" id=3]
+
+[node name="CoinsUI" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 16.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 16, 20 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 20.0
+margin_right = 50.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 3 )
+text = "0"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}

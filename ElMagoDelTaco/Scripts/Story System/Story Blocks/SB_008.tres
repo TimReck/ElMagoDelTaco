@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Story System/StoryBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialogs = {
+}
+npcsPositions = {
+}
+teleporterUseable = {
+}
+conditions = [  ]
+storyTitle = "Ende der Demo"
+storyDescription = "Vielen dank für das spielen. Das ist derzeit alles was wir für diese Demo haben! Wir hoffen du hattest Spaß dabei."

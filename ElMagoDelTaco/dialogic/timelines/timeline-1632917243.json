@@ -1,0 +1,109 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hola mi linda"
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Was? Redest du mit mir?"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sí. B. Me envía Urrito. Todavía tendrías información sobre la salsa de taco robada."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich verstehe kein Wort, aber ich schätze du bist auf der Suche nach der verschwundenen Tacosoße."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Das einzige, was ich dir dazu sagen kann ist, dass die Tacosoße von Gaunern mit in die Wüste genommen wurde."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Eso ya me ayuda. Gracias mi linda."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber keine Angst, ich werde diese wieder besorgen. Geh du in der Zeit zu B.Urrito und sprich mit ihm."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Übrigens, mit \"q\" und \"e\" kannst du zwischen deinen Zaubersprüchen wechseln, falls du das noch nicht wusstest."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Perdón?"
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Naja, man sieht sich."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1632917243.json",
+		"name": "PatuaPechos"
+	}
+}

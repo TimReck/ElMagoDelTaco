@@ -1,0 +1,92 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Finalmente, todo está hecho. Los ladrones han sido derrotados, la salsa de taco ha vuelto y mi bonita Patua está a salvo."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Patua, hay una cosa que he querido decirte todo el tiempo."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Patua Pechos te quiero. Espero que podamos pasar el resto de nuestras vidas juntos."
+		},
+		{
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "B. Urrito hast du verstanden was er will?"
+		},
+		{
+			"action": "leaveall",
+			"character": "character-1629990514.json",
+			"event_id": "dialogic_003"
+		},
+		{
+			"action": "join",
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keine Ahnung was er schon wieder sagt."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olvidadlo, estúpidos ******..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1632920363.json",
+		"name": "DasFinale"
+	}
+}

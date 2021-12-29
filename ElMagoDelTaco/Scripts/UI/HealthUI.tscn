@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/UI/TiledTextureProgress.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/UI/HealthUI.gd" type="Script" id=2]
+[ext_resource path="res://Graphics/UI/HeartUIFull.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/UI/HeartUIEmpty.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 2
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 320, 16 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 2
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 320, 16 )
+
+[node name="HealthUI" type="Control"]
+margin_right = 320.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
+rect_clip_content = true
+size_flags_horizontal = 3
+size_flags_vertical = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartsTextureProgress" type="TextureProgress" parent="."]
+margin_right = 320.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 320, 16 )
+size_flags_horizontal = 2
+size_flags_vertical = 0
+max_value = 20.0
+value = 10.0
+texture_under = SubResource( 1 )
+texture_progress = SubResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+max_hp_value = 20
+current_hp_value = 10

@@ -1,0 +1,20 @@
+{
+	"color": "#ffb32e2e",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1629903494.json",
+	"mirror_portraits": false,
+	"name": "B.Urrito",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 320,
+	"offset_y": -70,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Graphics/Dialog/B_urrito/B_urrito_normal.png"
+		}
+	],
+	"scale": 200
+}

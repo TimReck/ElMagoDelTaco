@@ -1,0 +1,91 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hola."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Du schon wieder hier? Wolltest du nicht die Soße suchen und zurück holen?"
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Patua dijo que iba a buscar la salsa y que debía volver a hablar contigo."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Du hast was? Du kannst doch Patua nicht alleine auf die Suche gehen lassen. Das wird sie nicht überleben."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, ¿entiendes el español?"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tut mir leid, ich verstehe kein Spanisch."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber mach dich auf die Suche nach Patua, bevor ihr etwas schlimmes passiert!"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Die Wüste ist östlich vom Dorf! Falls du nichtmehr weiter weißt drücke \"g\" um deine aktuelle Aufgabe anzuschauen."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Qué?"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1632917773.json",
+		"name": "PatuaVerschwunden"
+	}
+}

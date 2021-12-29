@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Entities/Overlap/Hitbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Projectile.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 3.0
+
+[node name="Projectile" type="KinematicBody2D"]
+collision_layer = 0
+script = ExtResource( 3 )
+
+[node name="ProjectileHitbox" parent="." instance=ExtResource( 2 )]
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="ProjectileHitbox" index="0"]
+shape = SubResource( 1 )
+
+[node name="DestroyTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[connection signal="interactableObjectHit" from="ProjectileHitbox" to="." method="_on_ProjectileHitbox_interactableObjectHit"]
+[connection signal="timeout" from="DestroyTimer" to="." method="_on_DestroyTimer_timeout"]
+
+[editable path="ProjectileHitbox"]

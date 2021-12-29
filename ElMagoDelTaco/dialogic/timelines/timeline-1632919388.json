@@ -1,0 +1,73 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Patua necesita tu ayuda. Se lastimó la pierna."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alles klar, ich kümmere mich um Patua. Geh du in die andere Wüste im Norden der Stadt, ich habe vorhin gesehen,"
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "wie die Gauner die Soße dort hin geschleppt haben."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Así que me entiendes. Estúpido ******. Pero bueno, estoy en camino."
+		},
+		{
+			"character": "character-1629903494.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Was hast du gesagt? Ich spreche kein Spanisch."
+		},
+		{
+			"character": "character-1629903412.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1632919388.json",
+		"name": "NochmalImDorf"
+	}
+}
