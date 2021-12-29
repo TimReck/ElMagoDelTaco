@@ -26,10 +26,11 @@ __meta__ = {
 anchor_left = 0.00417137
 anchor_right = 0.00417137
 anchor_bottom = 1.0
-margin_left = -814.281
-margin_top = -598.684
-margin_right = 585.719
-margin_bottom = 96.3162
+margin_left = -69.5107
+margin_top = -63.5942
+margin_right = 1330.49
+margin_bottom = 631.406
+rect_scale = Vector2( 0.292439, 0.292439 )
 texture = ExtResource( 4 )
 stretch_mode = 4
 __meta__ = {
@@ -88,11 +89,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -50.0
 custom_fonts/normal_font = SubResource( 2 )
-text = "Demo Version 0.1
-Spiel von Gruppe Leon Kennedy - HTW Saar
+text = "Demo Version 1
+Spiel von Project Aplha - HTW Saar
 
-Nathanael Mangold, Tim Recktenwald, Sami Machaoui,
-Johannes Schardt, Silas Scholl"
+Nathanael Mangold, Tim Recktenwald, Sami Machaoui, Hanna Wilhelmy"
 fit_content_height = true
 override_selected_font_color = true
 __meta__ = {
